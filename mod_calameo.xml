@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>MOD_CALAMEO</name>
+    <author>Luc Fouin</author>
+    <creationDate>Décembre 2013</creationDate>
+    <copyright>Copyleft</copyright>
+    <license></license>
+    <authorEmail>luc@fouin.org</authorEmail>
+    <authorUrl>http://www.fouin.org</authorUrl>
+    <version>1.0</version>
+    <description>MOD_CALAMEO_XML_DESCRIPTION</description>
+    <files>
+        <filename>mod_calameo.xml</filename>
+        <filename module="mod_calameo">mod_calameo.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="apikey"
+                    type="text"
+                    default=""
+                    label="MOD_CALAMEO_APIKEY"
+                    description="MOD_CALAMEO_APIKEY_DESC" />
+                <field
+                    name="secretkey"
+                    type="text"
+                    default=""
+                    label="MOD_CALAMEO_SECRETKEY"
+                    description="MOD_CALAMEO_SECRETKEY_DESC" />
+                <field
+                    name="publications_name"
+                    type="text"
+                    default=""
+                    label="MOD_CALAMEO_PUBLICATIONS_NAME"
+                    description="MOD_CALAMEO_PUBLICATIONS_NAME_DESC" />
+                <field
+                    name="publication_readmore"
+                    type="text"
+                    default=""
+                    label="MOD_CALAMEO_PUBLICATION_READMORE"
+                    description="MOD_CALAMEO_PUBLICATION_READMORE_DESC" />
+                <field
+                    name="count"
+                    type="text"
+                    default="1"
+                    label="MOD_CALAMEO_COUNT_ITEMS"
+                    description="MOD_CALAMEO_COUNT_ITEMS_DESC" />
+
+            </fieldset>    
+        </fields>
+    </config>
+</extension>
